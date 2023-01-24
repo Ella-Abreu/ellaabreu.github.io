@@ -7,17 +7,20 @@
 
 body {
     font-family: 'Fira Code', sans-serif;  
-    background-color: #fedece; 
-    color: #fd9f96;
+    background-image: url(./img/Background.png); 
+    background-repeat:repeat-y;
+    background-size: contain;
 }
 
 .section-title {
     font-size: 3rem;
     padding: 8px;
     font-family: 'Dancing Script', cursive;
-    color: #fd9f96;
-    text-shadow: 1px 1px #4c947c;
+    color: #7a8983;
+    text-shadow: 1px 1px #A66D6030;
     text-align: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 /*nav bar style start*/
@@ -64,11 +67,13 @@ nav {
 /*hero style start*/
 h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 3.8rem;
+    font-size: 60px;
     width: 100%;
     text-align: center;
-    text-shadow: 1px 1px #4c947c;
-}
+    color: #ED7B63;
+    text-shadow: 2px 1px #454947;
+    margin-bottom: 10px;
+    }
 
 .hero-container {
     position: relative;
@@ -77,9 +82,8 @@ h1 {
     background-image: url(./img/Hero-Mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
-    align-items: center;
     z-index: -2;
-    min-height: 150px;
+    min-height: 250px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
@@ -88,65 +92,36 @@ h1 {
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
-    font-size: 1.4em;
+    font-size: 20px;
     font-weight: 600;
-    color: #4c947c;
+    color: #7a8983;
     justify-content: center;
+    text-shadow: 1px 1px #454947;
 }
 
 
-/*button style start*/
-#hero-button {
-    font-size: 1rem;
-    font-weight: 900;
-    font-family: 'Fira Code', sans serif;
-    color: #4c947c;
-    padding: 4px 6px 4px;
-    outline: 0;
-    border: 2px solid #4c947c;
-    cursor: pointer;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  #hero-button::after {
-    content: "";
-    background-color: #B0CCC0;
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    height: 100%;
-    top: 7px;
-    left: 7px;
-    transition: 0.4s;
-  }
-  
-  #hero-button:hover::after {
-    top: 0px;
-    left: 0px;
-  }
   
 /*hero style end*/
 
  /*about me style start*/
  .about-me-section p {
-    width: 80%;
+    width: 90%;
     flex-grow: 2;
-    background-color: #A66D6030;
+    background-color: #EDC5B4;
     color: #7a8983;
     margin-bottom: 1em;
-    margin-top: 1em;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-    padding: 5px;
-    font-size: 1em;
+    padding: 10px;
+    font-size: 20px;
     text-align: justify;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
  }
 
  .languages-container {
-    width: 80%;
+    width: 90%;
     flex-grow: 2;
     margin-bottom: 1em;
     margin-top: 1em;
@@ -165,16 +140,21 @@ h1 {
     list-style: none;
     height: 100%;
     color: #4c947c;
-    font-size: 0.95em;
+    font-size:16px;
+    text-shadow: 1px 1px #A66D6030;
     align-self: center;
+    background-color: #B0CCC0;
+    padding: 4px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
  .about-me-image {
     display: block;
     align-items: center;
-    max-width: 80%;
+    max-width: 70%;
     margin-bottom: 1em;
-    margin-top: 1em;
+    margin-top: 35px;
     margin-left: auto;
     margin-right: auto;
     flex-grow: 1;
@@ -187,55 +167,55 @@ h1 {
  .portfolio-section {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
 
 .project-one {
-    width: 80%;
+    width: 90%;
     flex-grow: 2;
-    background-color: #A66D6030;
+    background-color: #EDC5B4;
     color: #7a8983;
     margin-bottom: 1em;
-    margin-top: 1em;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-    padding: 5px;
-    font-size: 1em;
+    padding: 10px;
+    font-size: 20px;
     text-align: justify;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
  }
 
  .project-two {
-    width: 80%;
+    width: 90%;
     flex-grow: 2;
-    background-color: #A66D6030;
+    background-color: #EDC5B4;
     color: #7a8983;
     margin-bottom: 1em;
     margin-top: 1em;
     margin-left: auto;
     margin-right: auto;
-    padding: 5px;
-    font-size: 1em;
+    padding: 10px;
+    font-size: 20px;
     text-align: justify;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
  }
 
  .project-three {
-    width: 80%;
+    width: 90%;
     flex-grow: 2;
-    background-color: #A66D6030;
+    background-color: #EDC5B4;
     color: #7a8983;
     margin-bottom: 1em;
     margin-top: 1em;
     margin-left: auto;
     margin-right: auto;
-    padding: 5px;
-    font-size: 1em;
+    padding: 10px;
+    font-size: 20px;
     text-align: justify;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
@@ -256,16 +236,26 @@ h1 {
  /*portfolio style end*/
 
  /*Form style start*/
+ #form-title {
+    font-size: 3rem;
+    padding: 8px;
+    font-family: 'Dancing Script', cursive;
+    color: #ED7B63;
+    text-shadow: 1px 1px #7a8983;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
  form {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    border-radius: 5px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #4c947c;
+    background-color: #B0CCC0;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     z-index: -2;
  }
@@ -284,8 +274,10 @@ h1 {
 
 
 #submit {
+    display: block;
     width: 90px;
     margin-left: auto;
+    margin-right: auto;
 }
 
  
